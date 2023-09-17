@@ -15,9 +15,9 @@ def make_commits(start_date, end_date):
         os.system(f'git commit --date="{formatted_date}" -m "Commit for {formatted_date}"')
 
         # Increment to the next day
-        current_date += timedelta(days=1 - 11)
+        current_date += timedelta(days=1)
 
-start_date = datetime(2022, 1, 1)  # Replace with your desired start date
+start_date = datetime(2022, 2, 18)  # Replace with your desired start date
 end_date = datetime(2022, 9, 13)  # Replace with your desired end date
 
 make_commits(start_date, end_date)
